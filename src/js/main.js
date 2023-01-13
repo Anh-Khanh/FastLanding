@@ -21,13 +21,17 @@ const goup = document.querySelector(".goup");
 goup.onclick = () => {
   window.scrollTo(0, 0);
 };
+
+const overlay = document.querySelector(".overlay");
 $(document).ready(function () {
   $(".menu__control").click(function (e) {
     e.stopPropagation();
+    overlay.style.display = 'block';
     $(this).closest(".menu").toggleClass("is-open");
   });
 
   $(document).click(function () {
     $(".menu__control").closest(".menu").removeClass("is-open");
+    overlay.style.display = "none";
   });
 });

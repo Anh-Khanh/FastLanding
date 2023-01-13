@@ -483,6 +483,16 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 555;
+    background: rgba($color: #10132c, $alpha: 0.6);
+    display: none;
+  }
   .content {
     padding-top: 90px;
   }
