@@ -294,11 +294,11 @@
       .footer_left {
         .download {
           .android {
-            width: 150px;
+            width: 170px;
             height: 67px;
           }
           .apple {
-            width: 150px;
+            width: 170px;
             height: 67px;
           }
         }
@@ -930,133 +930,7 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
-      // .menu {
-      //   display: block;
-      //   &.is-open {
-      //     .menu__content {
-      //       z-index: 999 !important;
-      //       visibility: visible;
-      //     }
-      //     .menu__list {
-      //       transform: translateY(0);
-      //       li {
-      //         &:not(.itemlist) {
-      //           margin-top: 13px;
-      //         }
-      //         &:nth-child(12) {
-      //           margin-top: 32px;
-      //         }
-      //       }
-      //       .itemlist {
-      //         display: flex;
-      //         justify-content: space-between;
-      //         align-items: center;
-      //         padding: 15px 41px;
-      //         margin-bottom: 66px;
-      //         .logo_header {
-      //           font-size: 28px;
-      //           color: #ffffff;
-      //           font-weight: 900;
-      //           font-style: italic;
-      //           font-family: "Lato";
-      //           text-transform: lowercase;
-      //         }
-      //       }
-      //     }
-      //   }
 
-      //   &__control {
-      //     background: transparent;
-      //     border: none;
-      //     color: inherit;
-      //     cursor: pointer;
-      //     font: inherit;
-
-      //     &:hover,
-      //     &:active,
-      //     &:focus {
-      //       opacity: 0.9;
-      //       outline: none;
-      //     }
-      //   }
-
-      //   &__content {
-      //     visibility: hidden;
-      //     overflow: hidden;
-      //     width: 100vw;
-      //     position: absolute;
-      //     z-index: 15;
-      //     top: 0;
-      //     left: -41px;
-      //     right: -41px;
-      //   }
-
-      //   &__list {
-      //     background-image: linear-gradient(120deg, #135379 0%, #7fcfc7 100%);
-      //     color: #fff;
-      //     font-size: 24px;
-      //     transition: 0.5s ease-out;
-      //     transform: translateY(-100%);
-      //     padding-bottom: 90px;
-      //     a {
-      //       font-size: 20px;
-      //       letter-spacing: 1px;
-      //       text-transform: uppercase;
-      //       color: #fefefe;
-      //       font-weight: 900;
-      //       text-align: center;
-      //       text-decoration: none;
-      //       transition: 0.5s background ease-out;
-      //       display: block;
-
-      //       &:hover {
-      //         background: lighten(#ccc, 7%);
-      //       }
-      //     }
-      //   }
-      //   .menu_contact {
-      //     margin-top: 35px;
-      //     ul {
-      //       display: flex;
-      //       justify-content: center;
-      //       align-items: center;
-      //       margin-right: -5px;
-      //       margin-left: -5px;
-      //       li {
-      //         margin-right: 5px;
-      //         margin-left: 5px;
-      //         list-style: none;
-      //         a {
-      //           display: flex;
-      //           align-items: center;
-      //           justify-content: center;
-      //           width: 40px;
-      //           height: 40px;
-      //           border-radius: 20px;
-      //           background-color: rgba($color: #10132c, $alpha: 0.102);
-      //           text-decoration: none;
-      //         }
-      //       }
-      //     }
-      //   }
-      //   .copys {
-      //     text-align: center;
-      //     margin-top: 25px;
-      //     p {
-      //       font-size: 14px;
-      //       line-height: 22px;
-      //       color: #fefefe;
-      //       font-weight: 400;
-      //       text-align: center;
-      //       &:first-child {
-      //         font-size: 14px;
-      //         color: #fefefe;
-      //         font-weight: 400;
-      //         margin-bottom: 21px;
-      //       }
-      //     }
-      //   }
-      // }
 
       .logo_header {
         font-size: 28px;
@@ -1289,6 +1163,7 @@
             ul {
               margin-top: 9px;
               li {
+                margin-top: 0;
                 text-align: center;
               }
             }
@@ -1321,7 +1196,7 @@
   .copy {
     margin-top: 15px;
     p {
-      margin-top: 6px;
+      margin-top: 10px;
       white-space: nowrap;
       &:first-child {
         margin-right: 0;
@@ -1331,6 +1206,7 @@
 }
 
 @media screen and (max-width: 407px) {
+
   .content {
     margin-top: 0;
     padding-top: 60px;
@@ -1349,10 +1225,26 @@
   header {
     .banner {
       .slick-next {
-        right: 50px !important;
+        right: 70px !important;
       }
       .slick-prev {
-        left: 50px !important;
+        left: 70px !important;
+      }
+    }
+  }
+  footer {
+    .footer{
+      .footer_right{
+        .social-networks{
+          .company{
+            ul{
+              margin-top: 8px;
+              li{
+                margin-top: 0;
+              }
+            }
+          }
+        }
       }
     }
   }

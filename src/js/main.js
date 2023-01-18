@@ -18,6 +18,12 @@ $("#slider").slick({
 });
 
 const goup = document.querySelector(".goup");
+const main = document.querySelector("main")
+window.onscroll = (e)=>{
+  document.documentElement.scrollTop > 1000
+    ? (goup.style.display = "flex")
+    : (goup.style.display ="none");
+}
 goup.onclick = () => {
   window.scrollTo(0, 0);
 };
