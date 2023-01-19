@@ -41,6 +41,7 @@
     }
     .banner {
       .banner_right {
+        margin-top: -10px;
         section {
           display: flex;
           flex-direction: column;
@@ -693,12 +694,12 @@
     }
     .banner {
       .slick-next {
-        right: 60px !important;
+        right: 30% !important;
         top: auto;
         bottom: -100px !important;
       }
       .slick-prev {
-        left: 60px !important;
+        left: 30% !important;
         top: auto;
         bottom: -100px !important;
       }
@@ -1225,10 +1226,10 @@
   header {
     .banner {
       .slick-next {
-        right: 70px !important;
+        right: 25% !important;
       }
       .slick-prev {
-        left: 70px !important;
+        left: 25% !important;
       }
     }
   }
@@ -1277,6 +1278,37 @@
     p {
       text-align: center;
           white-space: break-spaces;
+    }
+  }
+}
+@media screen and (max-width:370px) {
+    footer{
+      .footer{
+        .footer_right{
+          .contact{
+            ul{
+              li{
+                a{
+                  width: 35px;
+                  height: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+@media  screen and (max-width:348px) {
+    header {
+    .banner {
+      .slick-next {
+        right: 20% !important;
+      }
+      .slick-prev {
+        left: 20% !important;
+      }
     }
   }
 }

@@ -674,21 +674,3 @@ footer {
   -moz-text-fill-color: transparent; 
 }
 
-@media screen and (max-width:370px) {
-    footer{
-      .footer{
-        .footer_right{
-          .contact{
-            ul{
-              li{
-                a{
-                  width: 35px;
-                  height: 35px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-}
